@@ -1,4 +1,4 @@
 void gmode() {
-  gameObject();
-    gameRoom();
+gameObject();
+gameRoom();
 }
