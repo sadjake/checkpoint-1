@@ -1,21 +1,21 @@
 class object {
 
-  PVector loc;
-  PVector vel;
+  PVector location;
+  PVector velocity;
   int hp;
   float sd;
 
   object() {
-    loc = new PVector(width/2, height/2);
-    vel = new PVector(0, 0);
+    location = new PVector(width/2, height/2);
+    velocity = new PVector(0, 0);
     hp = 1;
   }
 
   void act() {
-    loc.add(vel);
-    if (loc.x<width*0.1) loc.x=width*0.1;
-    if (loc.x<height*0.1) loc.x=height*0.1;
-    if (loc.x<width*0.9) loc.x=width*0.9;
-    if (loc.x<height*0.9) loc.x=height*0.9;
+    location.add(velocity);
+    if (location.x<width*0.1) location.x=width*0.1;
+    if (location.x<height*0.1) location.x=height*0.1;
+    if (location.x<width*0.9) location.x=width*0.9;
+    if (location.x<height*0.9) location.x=height*0.9;
   }
 }
